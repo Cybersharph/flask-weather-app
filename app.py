@@ -22,7 +22,7 @@ def index():
     else:
         return render_template('index.html')
 
-# Getting the weather data from the API
+# Getting weather data from the API
 def get_weather_data(city):
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}'
     response = requests.get(url)
@@ -33,3 +33,13 @@ def get_weather_data(city):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# Program by: Muyivu Shafiq
+# My Twitter: @fique_myv
+# Program date: 16th February 2024
+# Program purpose: To create a simple weather app using the OpenWeatherMap API
+# Program version: 1.0
+# Program language: Python
+# Program framework: Flask
+# Program status: Completed and working, to be improved over time.
+# Program license: MIT License

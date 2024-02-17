@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 
-/* Let's make things mobile responsive */
+/* Let's make the app mobile responsive */
 @media (max-width: 768px) {
     .container {
         width: 100%;
