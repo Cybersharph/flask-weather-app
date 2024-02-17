@@ -21,9 +21,9 @@ This is a simple weather app built with Flask. It allows users to get the curren
 ## Technologies Used
 
 - Flask
+- Python
 - HTML
 - CSS
-- JavaScript
 - OpenWeatherMap API
 
 ## Visit Live App | Website 
