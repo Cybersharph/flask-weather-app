@@ -1,0 +1,20 @@
+# Virtual Environments
+flask-weather-app/ 
+
+# General Ignores 
+.DS_Store  # macOS specific
+Thumbs.db  # Windows specific
+*.pyc      # Python bytecode 
+__pycache__/  # Python cache folders
+
+# Project Artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE/Editor Preferences
+.idea/
+.vscode/ 
+
+# Secrets 
+.env

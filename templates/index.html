@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeatherX - Fetch Live Weather</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="WeatherX - Fetch Live Weather">
+    <meta name="keywords" content="WeatherX, Weather, Live Weather, Weather App, Live Weather App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>WeatherX</h1>
+
+        <form method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" name="city" placeholder="Enter City...">
+            </div>
+            <button type="submit" class="btn btn-success">Fetch Weather Data</button>
+        </form>
+
+            {% if weather %}
+            <div class="weather-container alert alert-success" role="alert">
+                <h3>City: {{ weather['name'] }} </h3>
+                <p>Country: {{ weather['sys']['country'] }}</p>
+                <p>Weather: {{ weather['weather'][0]['description'] }}</p>
+                <p>Temperature: {{ weather['main']['temp'] }} Kelvin</p> 
+                <p>Humidity: {{ weather['main']['humidity'] }} %</p>
+                <p>Wind Speed: {{ weather['wind']['speed'] }} m/s</p> 
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
