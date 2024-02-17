@@ -27,7 +27,7 @@ This is a simple weather app built with Flask. It allows users to get the curren
 - OpenWeatherMap API
 
 ## Visit Live App | Website 
-[FOLLOW THIS LINK TO LIVE APP](http://weatherx.cybersharph.net){:target="_blank"}
+[FOLLOW THIS LINK TO LIVE APP](http://weatherx.cybersharph.net)
 
 
 ## License
